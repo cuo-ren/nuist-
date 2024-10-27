@@ -40,4 +40,4 @@ while True:
     s = r.text
     s = s.encode('utf-8').decode('unicode_escape')
     print(s)
-    time.sleep(1)
+    time.sleep(60)
