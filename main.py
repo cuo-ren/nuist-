@@ -14,5 +14,7 @@ headers={"accept":"*/*","accept-encoding":"gzip, deflate, br, zstd","accept-lang
 while True:
     
     r=requests.post(url,data=data,headers=headers)
-    print(r.text)
+    s = r.text
+    s = s.encode('utf-8').decode('unicode_escape')
+    print(s)
     time.sleep(60)
